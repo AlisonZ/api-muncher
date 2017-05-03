@@ -1,9 +1,9 @@
 require 'httparty'
 
 class EdamamApiWrapper
-    BASE_URL = "https://api.edamam.com/search?"
     APP_ID = ENV["RECIPE_APP_ID"]
     APP_KEY = ENV["RECIPE_KEY"]
+    BASE_URL = "https://api.edamam.com/search?"
 
     def self.getRecipes(name)
         search_item = name
