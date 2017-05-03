@@ -1,1 +1,11 @@
-<h1>SHOW A RECIPE</h1>
+<h1><%= @recipe.name %></h1>
+<%= image_tag @recipe.image %>
+<%= link_to "Go to Recipe", @recipe.link %>
+<h3>Ingredients</h3>
+<% @recipe.ingredients.each do |ingredient| %>
+    <ul>
+        <li>
+            <%= ingredient %>
+        </li>
+    </ul>
+<% end %>

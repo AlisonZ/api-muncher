@@ -11,23 +11,30 @@ class EdamamApiWrapper
         response = HTTParty.get(url).parsed_response["hits"]
 
         #create an array to store the recipes in
-        @recipes = []
+        recipes = []
 
         response.each do |recipe|
             name = recipe["recipe"]["label"]
             image = recipe["recipe"]["image"]
             uri = recipe["recipe"]["uri"]
-            new_recipe = Recipe.new(name, image,uri)
+            new_recipe = Recipe.new(name, image, uri)
 
-            @recipes << new_recipe
+            recipes << new_recipe
         end
 
-        return @recipes
+        return recipes
     end
 
 
-    def self.showRecipe(search_item, name)
-        url = BASE_URL + "q=#{search_item}" + "&app_id=#{APP_ID}&app_key=#{APP_KEY}&#{name}"
+    def self.showRecipe(uri)
+        url = BASE_URL + "r=#{uri}"
         recipe = HTTParty.get(url).parsed_response
+        name = recipe[0]["label"]
+        image = recipe[0]["image"]
+        uri = recipe[0]["uri"]
+        link = recipe[0]["url"]
+        ingredients = recipe[0]["ingredientLines"]
+        recipe = Recipe.new(name, image, uri, link: link, ingredients: ingredients )
+        return recipe
     end
 end
