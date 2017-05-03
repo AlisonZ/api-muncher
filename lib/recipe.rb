@@ -1,8 +1,9 @@
 class Recipe
     #add more stuff later
-    attr_reader :name
+    attr_reader :name, :image
 
-    def initialize(name)
+    def initialize(name, image)
         @name = name
+        @image = image
     end
 end

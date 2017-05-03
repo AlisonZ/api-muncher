@@ -15,7 +15,9 @@ class EdamamApiWrapper
 
         response.each do |recipe|
             name = recipe["recipe"]["label"]
-            new_recipe = Recipe.new(name)
+            image = recipe["recipe"]["image"]
+            new_recipe = Recipe.new(name, image)
+
             recipes << new_recipe
         end
 
