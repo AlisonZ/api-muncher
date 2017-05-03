@@ -5,4 +5,9 @@ class RecipesController < ApplicationController
     def index
         @recipes = EdamamApiWrapper.getRecipes(params[:search])
     end
+
+    def show
+        #not sure about this param
+        @recipe = EdamamApiWrapper.showRecipe(params[:name])
+    end
 end
