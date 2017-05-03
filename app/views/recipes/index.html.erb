@@ -1,1 +1,9 @@
-<h1>INDEX</h1>
+<h1>LIST OF RECIPES</h1>
+<% @recipes.each do |recipe| %>
+    <ul>
+        <li>
+            <%= recipe.name %>
+        </li>
+    </ul>
+
+<% end %>
