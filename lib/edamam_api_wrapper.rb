@@ -34,7 +34,8 @@ class EdamamApiWrapper
         uri = recipe[0]["uri"]
         link = recipe[0]["url"]
         ingredients = recipe[0]["ingredientLines"]
-        recipe = Recipe.new(name, image, uri, link: link, ingredients: ingredients )
+        health_labels = recipe[0]["healthLabels"]
+        recipe = Recipe.new(name, image, uri, link: link, ingredients: ingredients, health_labels: health_labels )
         return recipe
     end
 end

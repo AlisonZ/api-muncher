@@ -9,3 +9,12 @@
         </li>
     </ul>
 <% end %>
+
+<h3>Dietary Info</h3>
+<% @recipe.health_labels.each do |label| %>
+    <ul>
+        <li>
+            <%= label %>
+        </li>
+    </ul>
+<% end %>

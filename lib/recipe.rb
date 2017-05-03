@@ -1,6 +1,6 @@
 class Recipe
     #add more stuff later
-    attr_reader :name, :image, :uri, :ingredients, :link, :dietary_info
+    attr_reader :name, :image, :uri, :ingredients, :link, :health_labels
 
     def initialize(name, image, uri, options = {})
         @name = name
@@ -8,7 +8,6 @@ class Recipe
         @uri = URI.escape(uri)
         @ingredients = options[:ingredients]
         @link = options[:link]
-        @dietary_info = options[:dietary_info]
-
+        @health_labels = options[:health_labels]
     end
 end
