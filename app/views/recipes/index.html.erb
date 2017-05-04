@@ -1,5 +1,5 @@
 <h1>LIST OF RECIPES</h1>
-<% @recipes.each do |recipe| %>
+<% @recipes_paginate.each do |recipe| %>
     <ul>
         <li>
             <%= link_to recipe.name, recipe_path(:name => recipe.name, :uri => recipe.uri) %>
@@ -8,3 +8,5 @@
     </ul>
 
 <% end %>
+
+<%= will_paginate @recipes_paginate %>
