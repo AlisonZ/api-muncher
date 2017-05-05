@@ -10,3 +10,4 @@
  #C09F80 tan- little icons in background image
 #565656 grey- header and footer
  #76323F oxblood- border colors, underlines
+ #DEDDDD light grey - insets
