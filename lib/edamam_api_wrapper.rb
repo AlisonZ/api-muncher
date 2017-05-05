@@ -22,7 +22,7 @@ class EdamamApiWrapper
             end
         end
 
-        return recipes`
+        return recipes
     end
 
 
