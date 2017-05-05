@@ -1,8 +1,15 @@
 <h1>LIST OF RECIPES</h1>
+
+
+<div class="row">
+    <p class="small-12 medium-6 columns"> WORKA</p>
+    <p class="small-12 medium-6 columns"> WORK B</p>
+    <p class="small-12 medium-6 columns"> WORK C</p>
+  </div>
 <% @recipes_paginate.each do |recipe| %>
-<div>
-    <ul class="row">
-        <div class="small-12 medium-6 item">
+<div class="row">
+    <ul class="item">
+        <div class="small-12 medium-6 columns">
             <li>
                 <%= image_tag recipe.image %>
             </li>
