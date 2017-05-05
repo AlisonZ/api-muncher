@@ -19,11 +19,25 @@ ul li {
     list-style: none;
 }
 
-/*.item {
-    border-style: solid;
-    border-color: blue;
-}*/
+h1 {
+    text-align: center;
+}
 
 .pagination a{
     display: inline;
+}
+
+#ingredients {
+    border-style: solid;
+    border-color: grey;
+    padding-right: 30px;
+}
+
+.show {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#original {
+    margin-left: 70px;
 }
