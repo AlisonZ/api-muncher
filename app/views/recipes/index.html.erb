@@ -1,7 +1,7 @@
-<section id="recipe_list">    
+<section id="recipe_list">
     <div class="row">
-        <% @recipes_paginate.each do |recipe| %>
         <ul>
+        <% @recipes_paginate.each do |recipe| %>
             <div class="small-6 medium-4 columns recipe_hit">
                 <li class="item">
                     <%= image_tag recipe.image %>
@@ -10,9 +10,9 @@
                     <%= link_to recipe.name, recipe_path(:name => recipe.name, :uri => recipe.uri) %>
                 </li>
             </div>
-        </ul>
 
         <% end %>
+    </ul>
     </div>
 
 

@@ -58,7 +58,7 @@ header h4 {
 }
 
 header {
-    height: 13em;
+    height: 15em;
     width: 100%;
     background-color: #565656;
 }
@@ -69,6 +69,8 @@ header h4 {
 
 .recipe_hit {
     padding-bottom: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #form_header {
@@ -105,6 +107,32 @@ footer {
     background-color: #DEDDDD;
 }
 
-/*a:link {
-    color: red
-}*/
+a {
+    font-family: 'Pacifico', cursive;
+}
+
+a:link {
+    color: #76323F;
+}
+
+a:hover {
+    color: #565656;
+}
+
+a:visited {
+    color: #565656;
+}
+
+nav a {
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 1em;
+}
+nav a:link {
+    color: #C09F80;
+}
+
+nav a:visited {
+    color: #C09F80;
+}
