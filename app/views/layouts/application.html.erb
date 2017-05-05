@@ -6,12 +6,16 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
+    <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <header>
-      <h1>THIS IS THE RECIPE APP</h1>
+      <h1>MUNCHABLE</h1>
+      <h4> When you're not sure what's for dinner</h4>
+      <nav>
+          <h5><%= link_to "Home", root_path %> </h5>
+      </nav>
   </header>
   <body>
 

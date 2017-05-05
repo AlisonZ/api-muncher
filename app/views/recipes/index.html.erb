@@ -1,10 +1,11 @@
 <h1>LIST OF RECIPES</h1>
 
+
 <div class="row">
     <% @recipes_paginate.each do |recipe| %>
-    <ul class="item">
-        <div class="small-12 medium-6 columns">
-            <li>
+    <ul>
+        <div class="small-6 medium-4 columns recipe_hit">
+            <li class="item">
                 <%= image_tag recipe.image %>
             </li>
             <li>
@@ -12,7 +13,7 @@
             </li>
         </div>
     </ul>
-    
+
     <% end %>
 </div>
 

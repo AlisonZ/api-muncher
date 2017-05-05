@@ -41,3 +41,22 @@ h1 {
 #original {
     margin-left: 70px;
 }
+
+header {
+    height: 10em;
+    width: 100%;
+    background-color: pink;
+}
+
+header h4 {
+    text-align: center;
+}
+
+.recipe_hit {
+    padding-bottom: 1.5em;
+}
+
+#form_header {
+    text-align: center;
+    padding-top: 1.5em;
+}
