@@ -136,3 +136,11 @@ nav a:link {
 nav a:visited {
     color: #C09F80;
 }
+
+.button {
+    background-color: #76323F;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    border-radius: 10px;
+    color: #D7CEC7;
+}
