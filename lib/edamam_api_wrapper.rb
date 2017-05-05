@@ -11,17 +11,18 @@ class EdamamApiWrapper
 
         #create an array to store the recipes in
         recipes = []
+        if response
+            response.each do |recipe|
+                name = recipe["recipe"]["label"]
+                image = recipe["recipe"]["image"]
+                uri = recipe["recipe"]["uri"]
+                new_recipe = Recipe.new(name, image, uri)
 
-        response.each do |recipe|
-            name = recipe["recipe"]["label"]
-            image = recipe["recipe"]["image"]
-            uri = recipe["recipe"]["uri"]
-            new_recipe = Recipe.new(name, image, uri)
-
-            recipes << new_recipe
+                recipes << new_recipe
+            end
         end
 
-        return recipes
+        return recipes`
     end
 
 
