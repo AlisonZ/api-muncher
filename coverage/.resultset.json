@@ -1,0 +1,130 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/app/helpers/homepages_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/app/helpers/recipes_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/app/controllers/homepages_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/test/controllers/recipes_controller_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/app/controllers/recipes_controller.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/lib/edamam_api_wrapper.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/alisonzerbe/Ada/APIs/api-muncher/lib/recipe.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1494020795
+  }
+}

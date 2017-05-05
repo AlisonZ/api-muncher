@@ -13,7 +13,9 @@ describe RecipesController do
     describe "show" do
         it "should show an individual recipe" do
             VCR.use_cassette("recipe") do
-                get recipes_path
+                recipe = EdamamApiWrapper.showRecipe("http://www.edamam.com/ontologies/edamam.owl%23recipe_27462b90519cb022b134a186afbd9000")
+
+                get recipe_path(:name => recipe.name, :uri => recipe.uri)
                 must_respond_with :success
             end
         end

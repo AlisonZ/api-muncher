@@ -34,6 +34,6 @@ describe EdamamApiWrapper do
         #         must_be nil
         #     end
         # end
-        
+
     end
 end
