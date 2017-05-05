@@ -1,27 +1,26 @@
-<h1>LIST OF RECIPES</h1>
+<section id="recipe_list">    
+    <div class="row">
+        <% @recipes_paginate.each do |recipe| %>
+        <ul>
+            <div class="small-6 medium-4 columns recipe_hit">
+                <li class="item">
+                    <%= image_tag recipe.image %>
+                </li>
+                <li>
+                    <%= link_to recipe.name, recipe_path(:name => recipe.name, :uri => recipe.uri) %>
+                </li>
+            </div>
+        </ul>
+
+        <% end %>
+    </div>
 
 
-<div class="row">
-    <% @recipes_paginate.each do |recipe| %>
-    <ul>
-        <div class="small-6 medium-4 columns recipe_hit">
-            <li class="item">
-                <%= image_tag recipe.image %>
-            </li>
+    <div id="pages">
+        <ul>
             <li>
-                <%= link_to recipe.name, recipe_path(:name => recipe.name, :uri => recipe.uri) %>
+                <%= will_paginate @recipes_paginate %>
             </li>
-        </div>
-    </ul>
-
-    <% end %>
-</div>
-
-
-<div id="pages">
-    <ul>
-        <li>
-            <%= will_paginate @recipes_paginate %>
-        </li>
-    </ul>
-</div>
+        </ul>
+    </div>
+</section>
