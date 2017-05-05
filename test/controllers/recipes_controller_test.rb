@@ -1,7 +1,10 @@
 require "test_helper"
 
 describe RecipesController do
-  # it "must be a real test" do
-  #   flunk "Need real tests"
-  # end
+  it "should get list of recipes" do
+    VCR.use_cassette("recipes") do
+        get 
+
+    end
+  end
 end
