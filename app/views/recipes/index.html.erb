@@ -1,12 +1,25 @@
 <h1>LIST OF RECIPES</h1>
 <% @recipes_paginate.each do |recipe| %>
-    <ul>
-        <li>
-            <%= link_to recipe.name, recipe_path(:name => recipe.name, :uri => recipe.uri) %>
-            <%= image_tag recipe.image %>
-        </li>
+<div>
+    <ul class="row">
+        <div class="small-12 medium-6 item">
+            <li>
+                <%= image_tag recipe.image %>
+            </li>
+            <li>
+                <%= link_to recipe.name, recipe_path(:name => recipe.name, :uri => recipe.uri) %>
+            </li>
+        </div>
     </ul>
 
-<% end %>
+    <% end %>
+</div>
 
-<%= will_paginate @recipes_paginate %>
+
+<div>
+    <ul>
+        <li>
+            <%= will_paginate @recipes_paginate %>
+        </li>
+    </ul>
+</div>

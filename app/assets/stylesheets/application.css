@@ -15,3 +15,15 @@
  *= require foundation_and_overrides
 
  */
+/*ul li {
+    list-style: none;
+}*/
+
+.item {
+    border-style: solid;
+    border-color: blue;
+}
+
+.pagination a{
+    display: inline;
+}
