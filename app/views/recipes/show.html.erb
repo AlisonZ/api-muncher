@@ -1,4 +1,4 @@
-<h1><%= @recipe.name %></h1>
+<h1><%= link_to @recipe.name, @recipe.link%></h1>
 <div class="row show">
     <div class="small-12 medium-8 columns">
         <%= image_tag @recipe.image %>
@@ -15,16 +15,13 @@
     </div>
 </div>
 
-<p id="original">
-    <%= link_to "Original Recipe", @recipe.link %>
-</p>
 
 <h3>Dietary Info</h3>
 
 <div class="row">
     <% @recipe.health_labels.each do |label| %>
-    <div class="small-6 medium-4 large-3 columns">
-        <ul>
+        <div class="small-6 medium-4 large-3 columns">
+            <ul>
             <li>
                 <%= label %>
             </li>
