@@ -1,0 +1,5 @@
+#12 Pretty Pastels
+#BFD8D2 powder - solid background
+#FEDCD2 peach - little icons in background image
+#DF744A warm - header and footer
+#DCB239 lemon - border colors, underlines
