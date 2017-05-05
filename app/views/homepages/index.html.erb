@@ -1,5 +1,7 @@
-<h2 id="form_header">Whatcha hungry for?</h2>
-<%= form_tag recipes_path, method: "get" do %>
-<%= text_field_tag(:search) %>
-<%= submit_tag("Get cookin!") %>
-<% end %>
+<div class="homepage">    
+    <h2 id="form_header">Whatcha hungry for?</h2>
+    <%= form_tag recipes_path, method: "get" do %>
+    <%= text_field_tag(:search) %>
+    <%= submit_tag("Get cookin!") %>
+    <% end %>
+</div>

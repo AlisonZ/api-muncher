@@ -45,7 +45,7 @@ h1 {
 header {
     height: 10em;
     width: 100%;
-    background-color: pink;
+    background-color: #DF744A;
 }
 
 header h4 {
@@ -64,5 +64,10 @@ header h4 {
 footer {
     height: 5em;
     width: 100%;
-    background-color: aqua;
+    background-color: #DF744A;
+}
+
+.homepage {
+    background-color: #BFD8D2;
+    height: 30em;
 }
