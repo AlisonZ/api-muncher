@@ -1,7 +1,7 @@
 <h1>LIST OF RECIPES</h1>
 
 <div class="row">
-<% @recipes_paginate.each do |recipe| %>
+    <% @recipes_paginate.each do |recipe| %>
     <ul class="item">
         <div class="small-12 medium-6 columns">
             <li>
@@ -12,12 +12,12 @@
             </li>
         </div>
     </ul>
-
+    
     <% end %>
 </div>
 
 
-<div>
+<div id="pages">
     <ul>
         <li>
             <%= will_paginate @recipes_paginate %>
